@@ -28,21 +28,18 @@ A Machine Learning project that predicts whether a loan application is likely to
 
 ```
 LoanApproval/
-│
-├── data/
-│   ├── train.csv
-│   └── test.csv
-│
-├── notebooks/
-│   └── Loan_Approval.ipynb
-│
-├── models/
-│   └── trained_model.pkl
-│
-├── app.py
-├── requirements.txt
 ├── README.md
-└── .gitignore
+├── app
+│   └── Loan.py
+├── data
+│   └── loan_data.csv
+├── model
+│   ├── Naive_Loan.pkl
+│   ├── columns.pkl
+│   └── scaler.pkl
+└── notebook
+    └── loan_CODE.ipynb
+
 ```
 
 ---
@@ -64,12 +61,11 @@ LoanApproval/
 
 | Metric | Score |
 |---------|--------|
-| Accuracy | XX% |
-| Precision | XX |
-| Recall | XX |
-| F1 Score | XX |
+| Accuracy | 0.7484 |
+| Precision | 0.8046 |
+| Recall | 0.9795 |
+| F1 Score | 0.6246 |
 
-> Replace the values above with your actual results.
 
 ---
 
@@ -90,21 +86,7 @@ cd sachinky01LoanApproval
 Create a virtual environment
 
 ```bash
-python -m venv .venv
-```
-
-Activate the virtual environment
-
-### Windows
-
-```bash
-.venv\Scripts\activate
-```
-
-### Linux / macOS
-
-```bash
-source .venv/bin/activate
+streamlit run app/Loan.py
 ```
 
 Install dependencies
@@ -126,26 +108,11 @@ jupyter notebook
 If using a Python application
 
 ```bash
-python app.py
+streamlit run app/Loan.py
 ```
 
 ---
 
-## 📸 Screenshots
-
-### Dataset
-
-_Add dataset screenshot here._
-
-### Data Analysis
-
-_Add graphs or visualizations here._
-
-### Prediction
-
-_Add prediction output screenshot here._
-
----
 
 ## 📚 Dataset
 
@@ -179,7 +146,7 @@ This project uses the Loan Approval Prediction dataset containing applicant info
 **Sachin Kumar Yadav**
 
 - GitHub: https://github.com/sachinky0
-- LinkedIn: *(Add your LinkedIn profile here)*
+- LinkedIn: https://www.linkedin.com/in/sachinky01
 
 ---
 
