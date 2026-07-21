@@ -37,8 +37,10 @@ LoanApproval/
 │   ├── Naive_Loan.pkl
 │   ├── columns.pkl
 │   └── scaler.pkl
-└── notebook
-    └── loan_CODE.ipynb
+├── notebook
+│   └── loan_CODE.ipynb
+└── requirements.txt
+
 
 ```
 
